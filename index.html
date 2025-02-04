@@ -3,72 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Origines du web - Gohoue Prisca </title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Les Origines du Web - Gohoue Prisca</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--En tête avec le menu -->
-    <header>
-
-        <h1>Les origines du web</h1>
-        <nav>
+    <!-- Header avec Flexbox -->
+    <header class="header">
+        <h1>Les Origines du Web</h1>
+        <nav class="nav">
             <ul>
                 <li><a href="#">Articles</a></li>
-                <li><a href="#">A Propos</a></li>
+                <li><a href="#">À Propos</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--Image représentant les débuts du web-->
-    <section>
-    <img src="/tim_Berners_Lee.jpeg" alt="tim_Berners_Lee;le créateur du web">
+    <!-- Image principale centrée -->
+    <section class="image-section">
+        <img src="tim_Berners_Lee.jpeg" alt="Tim Berners-Lee, le créateur du web">
     </section>
 
-    <!--Introduction avec 4 paragraphes-->
-    <section>
-        <h2>Introduction</h2>
-        <p> Tim Berners-Lee, chercheur britannique, a inventé le Web au CERN en 1989. À l’origine, le projet, baptisé « World Wide Web », a été conçu et développé pour que des scientifiques travaillant dans des universités et instituts du monde entier puissent s'échanger des informations instantanément. </p>
-        <img src="/Screenshot-World-Wide-Web-project-small.png" alt="1er site web">
-        <p>Le premier site Web créé au CERN, et dans le monde, était destiné au projet World Wide Web lui-même. Il était hébergé sur l’ordinateur NeXT de Tim Berners-Lee. En 2013, le CERN a entrepris de remettre en service ce premier site Web : info.cern.ch.</p>
-        <p>Le 30 avril 1993, le CERN a mis le logiciel du World Wide Web dans le domaine public. Puis il a émis une version suivante de l’application sous licence libre, une façon plus sûre de maximiser sa diffusion. Ce faisant, il a permis à la Toile de se tisser.</p>
-        <img src="/images.jpeg" alt=" Wold Wide Web">
-        <p>Pensé comme un outil ouvert, qui répondait parfaitement aux besoins de la communauté des physiciens et soumis à aucune licence, le Web a largement contribué à la diffusion d’Internet auprès du grand public et connu l’essor fulgurant que l’on sait</p>
-        <P>Le web a connu une évolution remarquable depuis sa création dans les années 1990. Au départ, les sites web étaient très et statiques, avec peu d’interactivité. Puis, avec l’évolution entre autres du HTML et du CSS, les sites web ont commencé à devenir plus dynamiques et visuellement attrayants. L’arrivée du JavaScript a permis d’ajouter encore plus d’interactivité, avec des animations et de simples effets visuels sophistiqués. Aujourd’hui, le web continue d’évoluer à un rythme effréné avec des avancées constantes dans les domaines de la sécurité, de la vitesse et de l’accessibilité. Les technologies émergentes telles que l’Intelligence Artificielle et la Réalité Virtuelle promettent de révolutionner encore davantage l’expérience utilisateur en ligne.</P>
-    </section>
-    
-    <!--Liste avec des articles à venir-->
-    <section>
-        <h2>Article à venir</h2>
-        <article>
-        <img src="/premier_site_web2jpg.jpg" alt="image article">
-        <h3><a href="https://captaintech.fr/histoire-du-premier-site-internet-de-tim-berners-lee-inventeur-www" target="_blank">Le premier site web</a></h3>
-        <p>Le 6 août 1991, le premier site internet de l’histoire est né: info.cern.ch. Ce site, créé par Tim Berners-Lee lui-même, avait pour objectif de fournir des informations sur le World Wide Web. Il expliquait comment créer un serveur web, comment accéder aux documents et ainsi comment créer des pages web en utilisant le langage HTML... <em> <a href="https://captaintech.fr/histoire-du-premier-site-internet-de-tim-berners-lee-inventeur-www" target="_blank">Lire la suite</a></em></p>  
-          </article>
-          <article>
-            <img src="/Les premiers_navigateurs_jpg.jpg" alt="Image article">
-            <h3><a href="https://lekki.fr/creation-premier-navigateur-dote-d-une-interface-graphique-date-et-histoire" target="_blank">Les premiers navigateurs</a></h3>
-            <p>La création du premier navigateur doté d’une interface graphique remonte à 1993. Ce navigateur, connu sous le nom de Mosaic, a été développé par l’équipe du National Center for Supercomputing Applications (NCSA). Mosaic a marqué une étape cruciale dans l’évolution d’Internet, rendant le web plus accessible et visuellement attrayant... <em> <a href="https://lekki.fr/creation-premier-navigateur-dote-d-une-interface-graphique-date-et-histoire" target="_blank">Lire la suite</a></em></p>
-        </article>
-    </section>
+    <!-- Conteneur principal avec CSS Grid -->
+    <main class="container">
+        <section class="introduction">
+            <h2>Introduction</h2>
+            <div class="intro-grid">
+                <p>
+                    Tim Berners-Lee, chercheur britannique, a inventé le Web au CERN en 1989. À l’origine, le projet, baptisé « World Wide Web », a été conçu et développé pour que des scientifiques travaillant dans des universités et instituts du monde entier puissent s'échanger des informations instantanément.
+                </p>
+                <img src="Screenshot-World-Wide-Web-project-small.png" alt="Premier site web">
+                <p>
+                    Le premier site Web créé au CERN, et dans le monde, était destiné au projet World Wide Web lui-même. Il était hébergé sur l’ordinateur NeXT de Tim Berners-Lee. En 2013, le CERN a entrepris de remettre en service ce premier site Web : info.cern.ch.
+                </p>
+                <p>
+                    Le 30 avril 1993, le CERN a mis le logiciel du World Wide Web dans le domaine public. Puis il a émis une version suivante de l’application sous licence libre, une façon plus sûre de maximiser sa diffusion. Ce faisant, il a permis à la Toile de se tisser.
+                </p>
+                <img src="images.jpeg" alt="World Wide Web">
+                <p>
+                    Pensé comme un outil ouvert, qui répondait parfaitement aux besoins de la communauté des physiciens et soumis à aucune licence, le Web a largement contribué à la diffusion d’Internet auprès du grand public et connu l’essor fulgurant que l’on sait.
+                </p>
+                <p>
+                    Le web a connu une évolution remarquable depuis sa création dans les années 1990. Au départ, les sites web étaient très statiques, avec peu d’interactivité. Puis, avec l’évolution entre autres du HTML et du CSS, les sites web ont commencé à devenir plus dynamiques et visuellement attrayants. L’arrivée du JavaScript a permis d’ajouter encore plus d’interactivité, avec des animations et de simples effets visuels sophistiqués. Aujourd’hui, le web continue d’évoluer à un rythme effréné avec des avancées constantes dans les domaines de la sécurité, de la vitesse et de l’accessibilité. Les technologies émergentes telles que l’Intelligence Artificielle et la Réalité Virtuelle promettent de révolutionner encore davantage l’expérience utilisateur en ligne.
+                </p>
+            </div>
+        </section>
 
-    <!--informations personnelles-->
-    <section>
-        <h2>A propos de moi</h2>
-        <p><strong>Nom :</strong>Gohoue Prisca</p>
-        <p><strong>Profession :</strong>Référent Digital</p>
-        <p><strong>Email :</strong><a href="mailto:gohoueprisca@gmail.com">gohoueprisca@gmail.com</a></p>
-        <p><strong>Téléphone :</strong> +229 01 61 06 69 64</p>
-    </section>
+        <!-- Section Articles en CSS Grid -->
+        <section class="articles">
+            <h2>Articles à venir</h2>
+            <div class="articles-grid">
+                <article>
+                    <img src="premier_site_web2jpg.jpg" alt="Image article">
+                    <h3><a href="https://captaintech.fr/histoire-du-premier-site-internet">Le premier site web</a></h3>
+                    <p>
+                        Le 6 août 1991, le premier site internet de l’histoire est né: info.cern.ch. Ce site, créé par Tim Berners-Lee lui-même, avait pour objectif de fournir des informations sur le World Wide Web. Il expliquait comment créer un serveur web, comment accéder aux documents et ainsi comment créer des pages web en utilisant le langage HTML... 
+                        <em><a href="https://captaintech.fr/histoire-du-premier-site-internet">Lire la suite</a></em>
+                    </p>
+                </article>
+                <article>
+                    <img src="Les_premiers_navigateurs_jpg.jpg" alt="Image article">
+                    <h3><a href="https://lekki.fr/creation-premier-navigateur">Les premiers navigateurs</a></h3>
+                    <p>
+                        La création du premier navigateur doté d’une interface graphique remonte à 1993. Ce navigateur, connu sous le nom de Mosaic, a été développé par l’équipe du National Center for Supercomputing Applications (NCSA). Mosaic a marqué une étape cruciale dans l’évolution d’Internet, rendant le web plus accessible et visuellement attrayant...
+                        <em><a href="https://lekki.fr/creation-premier-navigateur">Lire la suite</a></em>
+                    </p>
+                </article>
+            </div>
+        </section>
 
-<!--Pied de page avec des infos-->
-    <footer>
-     <p> Réalisé par Gohoue Prisca - Copyright 2025. Tous droits réservés.</p>
-     <p>Retrouvez-moi sur :
-        <a href="https://www.linkedin.com/in/prisca-gohoue-b96a0019b/?locale=en_US">LinkedIn</a>
-        <a href="https://www.facebook.com/share/1BzjxemUaQ/">Facebook</a>
-        <a href="https://github.com/">GitHub Identifiant Prissi09</a>
-    </p>
+        <!-- Section À propos -->
+        <section class="about">
+            <h2>À propos de moi</h2>
+            <p><strong>Nom :</strong> Gohoue Prisca</p>
+            <p><strong>Profession :</strong> Référent Digital</p>
+            <p><strong>Email :</strong> <a href="mailto:gohoueprisca@gmail.com">gohoueprisca@gmail.com</a></p>
+            <p><strong>Téléphone :</strong> +229 01 61 06 69 64</p>
+        </section>
+    </main>
+
+    <!-- Footer avec Flexbox -->
+    <footer class="footer">
+        <p>Réalisé par Gohoue Prisca - Copyright 2025. Tous droits réservés.</p>
+        <p>Retrouvez-moi sur :
+            <a href="https://www.linkedin.com/in/prisca-gohoue">LinkedIn</a> |
+            <a href="https://www.facebook.com/share/1BzjxemUaQ/">Facebook</a> |
+            <a href="https://github.com/">GitHub (Prissi09)</a>
+        </p>
     </footer>
 </body>
 </html>
