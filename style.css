@@ -54,7 +54,7 @@ body {
 .container {
     max-width: 900px;
     margin: auto;
-    background: rgb(252, 252, 252);
+    background: rgb(213, 220, 243);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -106,6 +106,162 @@ body {
 .about {
     text-align: center;
     margin-top: 20px;
+}
+Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* En-tête */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #ff9800;
+}
+
+/* Section image */
+.image-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Animation d'apparition */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Tableau */
+.histoire {
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid #131010;
+    padding: 10px;
+}
+
+th {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Formulaire */
+.contact-form {
+    width: 50%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e68900;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .image-section img {
+        width: 90%;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
 }
 
 /* FOOTER (Flexbox) */
